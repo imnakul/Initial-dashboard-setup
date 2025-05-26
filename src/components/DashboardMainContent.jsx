@@ -1,5 +1,6 @@
 import Sidebar from './Sidebar'
 import { useEffect, useState } from 'react'
+import SearchBar from '../sub-components/SearchBar'
 
 function DashboardMainContent() {
    const [selected, setSelected] = useState('Dashboard')
@@ -22,7 +23,10 @@ function DashboardMainContent() {
             <div className='grid-small-container'>
                {selected === 'Dashboard' ? (
                   <>
-                     <div className='grid-col-1'>1</div>
+                     <div className='grid-col-1'>
+                        <SearchBar />
+                        <h1>Dashboard</h1>
+                     </div>
                      <div className='grid-col-2 '>2</div>
                   </>
                ) : (
@@ -37,5 +41,3 @@ function DashboardMainContent() {
    )
 }
 export default DashboardMainContent
-
-const sidebarItems = ['Dashboard', 'History', 'Calendar', 'Appointments', 'Statistics', 'Chat', 'Support', 'Settings']

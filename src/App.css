@@ -162,3 +162,53 @@ body {
    background-color: #f6faff;
    width: 100%;
 }
+
+.header-dashboard {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   gap: 1rem;
+   margin-top: 1.5rem;
+}
+
+.notification-icon {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: start;
+
+   padding: 10px;
+   background-color: #ffffff;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   margin-bottom: 1rem;
+   gap: 1rem;
+}
+
+.search-bar {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: start;
+   width: 100%;
+   padding: 10px;
+   background-color: #ffffff;
+
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   margin-bottom: 1rem;
+   gap: 1rem;
+}
+.search-bar input {
+   width: 100%;
+   border: none;
+   outline: none;
+   font-size: 1rem;
+   color: #333;
+}
+.search-bar input::placeholder {
+   color: #aaa;
+   font-size: 0.8rem;
+}
