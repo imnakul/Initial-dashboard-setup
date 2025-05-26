@@ -1,4 +1,5 @@
-function Sidebar() {
+function Sidebar({ selected, onItemClick }) {
+   // The sidebar component receives the selected item as a prop
    return (
       <>
          <aside className='sidebar'>
@@ -7,26 +8,37 @@ function Sidebar() {
                <span style={{ color: '#1D1448' }}>care.</span>
             </div>
             <div className='sidebar-content'>
-               <span style={{ color: '#e7eaf0' }}>General</span>
-               {general.map((item) => (
-                  <span
-                     key={item.name}
-                     className='sidebar-item'
-                  >
-                     {item.icon}
-                     {item.name}
-                  </span>
-               ))}
-               <span style={{ color: '#e7eaf0' }}>Tools</span>
-               {tools.map((item) => (
-                  <span
-                     key={item.name}
-                     className='sidebar-item'
-                  >
-                     {item.icon}
-                     {item.name}
-                  </span>
-               ))}
+               <span style={{ color: '#ccc', fontSize: '0.9rem', fontWeight: 'bold', marginLeft: '1rem' }}>
+                  General
+               </span>
+               {general.map((item) => {
+                  return (
+                     <span
+                        key={item.name}
+                        className='sidebar-item'
+                        style={{ color: selected === item.name ? '#363b78' : '#6e7072' }}
+                        onClick={() => onItemClick(item.name)}
+                     >
+                        {item.icon}
+                        {item.name}
+                     </span>
+                  )
+               })}
+
+               <span style={{ color: '#ccc', fontSize: '0.9rem', fontWeight: 'bold', marginLeft: '1rem' }}>Tools</span>
+               {tools.map((item) => {
+                  return (
+                     <span
+                        key={item.name}
+                        className='sidebar-item'
+                        style={{ color: selected === item.name ? '#363b78' : '#6e7072' }}
+                        onClick={() => onItemClick(item.name)}
+                     >
+                        {item.icon}
+                        {item.name}
+                     </span>
+                  )
+               })}
             </div>
             <div className='sidebar-footer'>
                <span>
@@ -52,7 +64,12 @@ function Sidebar() {
                      </g>
                   </svg>
                </span>
-               <span>Settings</span>
+               <span
+                  style={{ cursor: 'pointer' }}
+                  onClick={() => onItemClick('Settings')}
+               >
+                  Settings
+               </span>
             </div>
          </aside>
       </>
