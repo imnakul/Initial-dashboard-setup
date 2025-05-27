@@ -157,8 +157,9 @@ body {
 }
 
 .grid-col-2 {
-   padding: 10px;
+   padding: 10px 30px;
    background-color: #f6faff;
+   /* background-color: blue; */
    width: 100%;
    border-top-right-radius: 30px;
    border-bottom-right-radius: 30px;
@@ -353,8 +354,8 @@ body {
    gap: 0.8rem;
    /* background-color: blue; */
    margin-top: 2rem;
-   margin-bottom: 1rem;
-   padding-right: 2rem;
+   margin-bottom: 1.5rem;
+   padding-right: 1rem;
 }
 .avatar {
    display: flex;
@@ -364,8 +365,7 @@ body {
    border-radius: 30%;
    background-color: #01dfec;
    cursor: pointer;
-
-   padding: 6px;
+   padding: 5px;
 }
 
 .addButton {
@@ -380,4 +380,109 @@ body {
 
    cursor: pointer;
    padding: 8px;
+}
+
+.calendar-header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   font-weight: 500;
+   color: #3b36a5;
+   padding-left: 10px;
+   padding-right: 20px;
+}
+
+.calendar {
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   /* gap: 1rem; */
+   margin-top: 20px;
+   /* background-color: #3b36a5; */
+}
+
+.day {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   padding: 15px 15px;
+   gap: 1.2rem;
+   background-color: #f6faff;
+   border-radius: 10px;
+   cursor: pointer;
+   /* background-color: #36a56d; */
+}
+
+.highlighted {
+   background-color: #edf4ff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   padding: 15px 15px;
+   gap: 1.2rem;
+
+   border-radius: 20px;
+   cursor: pointer;
+}
+
+.light-opacity {
+   background-color: #f6faff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   padding: 15px 15px;
+   gap: 1.2rem;
+
+   border-radius: 20px;
+   cursor: pointer;
+}
+
+.day-name {
+   font-weight: 500;
+   color: #3b36a5;
+   font-size: 0.7rem;
+}
+
+.day-date {
+   font-weight: 600;
+   color: #0b073e;
+   font-size: 1.2rem;
+}
+
+.day-time {
+   font-weight: 300;
+   color: #0b073e;
+   font-size: 0.7rem;
+}
+.day.selected {
+   background-color: #3b36a5;
+   color: white;
+}
+
+.light-opacity {
+   opacity: 0.5;
+}
+
+.big-dash {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+
+.highlighted-time {
+   font-weight: 300;
+   color: #ffffff;
+   font-size: 0.7rem;
+   padding: 5px 10px;
+   border-radius: 10px;
+   background-color: #aaaed7;
 }

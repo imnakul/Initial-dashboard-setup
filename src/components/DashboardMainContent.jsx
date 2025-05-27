@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import SearchBar from '../sub-components/SearchBar'
 import ActivityFeed from '../sub-components/ActivityFeed'
 import Header from './Header'
+import CalendarView from '../sub-components/CalendarView'
 
 function DashboardMainContent() {
    const [selected, setSelected] = useState('Dashboard')
@@ -239,6 +240,8 @@ function DashboardMainContent() {
                      {/* //?? Grid Column 2 */}
                      <div className='grid-col-2 '>
                         <Header />
+
+                        <CalendarView />
                      </div>
                   </>
                ) : (
