@@ -5,7 +5,7 @@ function Sidebar({ selected, onItemClick }) {
          <aside className='sidebar'>
             <div className='sidebar-header'>
                <span style={{ color: '#29D5EB' }}>Health</span>
-               <span style={{ color: '#1D1448' }}>care.</span>
+               <span style={{ color: '#231C56' }}>care.</span>
             </div>
             <div className='sidebar-content'>
                <span style={{ color: '#ccc', fontSize: '0.9rem', fontWeight: 'bold', marginLeft: '1rem' }}>
@@ -16,7 +16,10 @@ function Sidebar({ selected, onItemClick }) {
                      <span
                         key={item.name}
                         className='sidebar-item'
-                        style={{ color: selected === item.name ? '#363b78' : '#6e7072' }}
+                        style={{
+                           color: selected === item.name ? '  #1f2c67' : ' #bdc1c7',
+                           fontWeight: selected === item.name ? '500' : '300',
+                        }}
                         onClick={() => onItemClick(item.name)}
                      >
                         {item.icon}
@@ -31,7 +34,7 @@ function Sidebar({ selected, onItemClick }) {
                      <span
                         key={item.name}
                         className='sidebar-item'
-                        style={{ color: selected === item.name ? '#363b78' : '#6e7072' }}
+                        style={{ color: selected === item.name ? '#1f2c67' : '#bdc1c7' }}
                         onClick={() => onItemClick(item.name)}
                      >
                         {item.icon}
@@ -48,27 +51,26 @@ function Sidebar({ selected, onItemClick }) {
                      height='20'
                      viewBox='0 0 24 24'
                   >
-                     <g
-                        fill='none'
-                        stroke='currentColor'
-                        stroke-linecap='round'
-                        stroke-linejoin='round'
-                        stroke-width='2'
-                     >
-                        <path d='M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z' />
-                        <circle
-                           cx='12'
-                           cy='12'
-                           r='3'
-                        />
-                     </g>
+                     <path
+                        fill='currentColor'
+                        fill-rule='evenodd'
+                        d='M9.965 2.809a1.51 1.51 0 0 0-1.401-.203a10 10 0 0 0-2.982 1.725a1.51 1.51 0 0 0-.524 1.313c.075.753-.058 1.48-.42 2.106c-.361.627-.925 1.106-1.615 1.417c-.458.203-.786.62-.875 1.113a10 10 0 0 0 0 3.44c.093.537.46.926.875 1.114c.69.31 1.254.79 1.616 1.416c.361.627.494 1.353.419 2.106c-.045.452.107.964.524 1.313a10 10 0 0 0 2.982 1.725c.471.169.996.093 1.4-.203c.615-.442 1.312-.691 2.036-.691s1.42.249 2.035.691c.37.266.89.39 1.401.203a10 10 0 0 0 2.982-1.725c.417-.349.57-.86.524-1.313c-.075-.753.057-1.48.42-2.106c.361-.627.925-1.105 1.615-1.416c.414-.188.782-.577.875-1.114a10.1 10.1 0 0 0 0-3.44a1.51 1.51 0 0 0-.875-1.113c-.69-.311-1.254-.79-1.616-1.417c-.362-.626-.494-1.353-.419-2.106a1.51 1.51 0 0 0-.524-1.313a10 10 0 0 0-2.982-1.725a1.51 1.51 0 0 0-1.4.203C13.42 3.25 12.723 3.5 12 3.5s-1.42-.249-2.035-.691'
+                        class='duoicon-secondary-layer'
+                        opacity='.3'
+                     />
+                     <path
+                        fill='currentColor'
+                        fill-rule='evenodd'
+                        d='M9 12c0-2.309 2.5-3.753 4.5-2.598A3 3 0 0 1 15 12c0 2.309-2.5 3.753-4.5 2.598A3 3 0 0 1 9 12'
+                        class='duoicon-primary-layer'
+                     />
                   </svg>
                </span>
                <span
-                  style={{ cursor: 'pointer' }}
+                  style={{ cursor: 'pointer', color: '#bdc1c7' }}
                   onClick={() => onItemClick('Settings')}
                >
-                  Settings
+                  Setting
                </span>
             </div>
          </aside>

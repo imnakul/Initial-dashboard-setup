@@ -1,6 +1,7 @@
 import Sidebar from './Sidebar'
 import { useEffect, useState } from 'react'
 import SearchBar from '../sub-components/SearchBar'
+import ActivityFeed from '../sub-components/ActivityFeed'
 
 function DashboardMainContent() {
    const [selected, setSelected] = useState('Dashboard')
@@ -34,10 +35,35 @@ function DashboardMainContent() {
                            }}
                         >
                            <h3 style={{ color: '#2D2A8C', fontWeight: '700' }}>Dashboard</h3>
-                           <span style={{ color: '#6e7072', fontSize: '0.6rem', fontWeight: 'bold' }}>Show More</span>
+                           <span
+                              style={{
+                                 fontSize: '0.7rem',
+                                 fontWeight: 400,
+                                 color: ' #a0aec0',
+                                 display: 'flex',
+                                 alignItems: 'center',
+                                 gap: '0.5rem',
+                              }}
+                           >
+                              This week
+                              <svg
+                                 xmlns='http://www.w3.org/2000/svg'
+                                 width='10'
+                                 height='10'
+                                 viewBox='0 0 20 20'
+                              >
+                                 <path
+                                    fill='currentColor'
+                                    d='M10.103 12.778L16.81 6.08a.69.69 0 0 1 .99.012a.726.726 0 0 1-.012 1.012l-7.203 7.193a.69.69 0 0 1-.985-.006L2.205 6.72a.727.727 0 0 1 0-1.01a.69.69 0 0 1 .99 0l6.908 7.068Z'
+                                 />
+                              </svg>
+                           </span>
                         </div>
                         <div className='body-details'>
-                           <div className='body-detail-1'>
+                           <div
+                              style={{ postion: 'relative' }}
+                              className='body-detail-1'
+                           >
                               <div
                                  style={{
                                     display: 'flex',
@@ -63,11 +89,28 @@ function DashboardMainContent() {
                               <img
                                  src='/ANATOMY.jpg'
                                  alt='Anatomy'
-                                 style={{ width: '25rem', height: '25rem', objectFit: 'contain' }}
+                                 style={{ width: '20rem', height: '20rem', objectFit: 'contain' }}
                               />
+                              {/* <div class='scan-arc'>
+                                 <svg
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    width='10'
+                                    height='10'
+                                    viewBox='0 0 24 24'
+                                 >
+                                    <path
+                                       fill='currentColor'
+                                       d='M12 7C6.5 7 2 9.2 2 12c0 2.2 2.9 4.1 7 4.8V20l4-4l-4-4v2.7c-3.2-.6-5-1.9-5-2.7c0-1.1 3-3 8-3s8 1.9 8 3c0 .7-1.5 1.9-4 2.5v2.1c3.5-.8 6-2.5 6-4.6c0-2.8-4.5-5-10-5Z'
+                                    />
+                                 </svg>
+                              </div> */}
                            </div>
-                           <div className='body-detail-2'>2</div>
+
+                           <div className='body-detail-2'>
+                              2<span className='activity-details'>Details &rarr;</span>
+                           </div>
                         </div>
+                        <ActivityFeed />
                      </div>
                      <div className='grid-col-2 '>2</div>
                   </>
