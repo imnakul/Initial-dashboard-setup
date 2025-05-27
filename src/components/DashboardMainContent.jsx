@@ -4,6 +4,7 @@ import SearchBar from '../sub-components/SearchBar'
 import ActivityFeed from '../sub-components/ActivityFeed'
 import Header from './Header'
 import CalendarView from '../sub-components/CalendarView'
+import UpcomingSchedule from '../sub-components/UpcomingSchedule'
 
 function DashboardMainContent() {
    const [selected, setSelected] = useState('Dashboard')
@@ -242,6 +243,44 @@ function DashboardMainContent() {
                         <Header />
 
                         <CalendarView />
+
+                        <div className='grid-col-2-body'>
+                           <div className='grid-col-2-body-card1'>
+                              <span>Dentist</span>
+                              <span style={{ fontSize: '0.8rem' }}>09:00 - 11:00</span>
+                              <span style={{ fontSize: '0.8rem' }}>Dr Cameron Wiliamson</span>
+                              <img
+                                 style={{
+                                    width: '1.2rem',
+                                    height: '1.2rem',
+                                    position: 'absolute',
+                                    top: '1rem',
+                                    right: '1rem',
+                                 }}
+                                 src='/toothicon.png'
+                                 alt='Tooth'
+                              />
+                           </div>
+                           <div className='grid-col-2-body-card2'>
+                              <span>Physiotherapy Appointment</span>
+                              <span style={{ fontSize: '0.8rem' }}>11:00 - 12:00</span>
+                              <span style={{ fontSize: '0.8rem' }}>Dr Kevin Djones</span>
+                              <img
+                                 style={{
+                                    width: '1.2rem',
+                                    height: '1.2rem',
+                                    position: 'absolute',
+                                    top: '1rem',
+                                    right: '1rem',
+                                 }}
+                                 src='/bicepicon.png'
+                                 alt='Physiotherapy'
+                              />
+                           </div>
+                        </div>
+                        <div className='grid-col-2-footer'>
+                           <UpcomingSchedule />
+                        </div>
                      </div>
                   </>
                ) : (
