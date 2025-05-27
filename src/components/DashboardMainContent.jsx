@@ -2,6 +2,7 @@ import Sidebar from './Sidebar'
 import { useEffect, useState } from 'react'
 import SearchBar from '../sub-components/SearchBar'
 import ActivityFeed from '../sub-components/ActivityFeed'
+import Header from './Header'
 
 function DashboardMainContent() {
    const [selected, setSelected] = useState('Dashboard')
@@ -24,6 +25,7 @@ function DashboardMainContent() {
             <div className='grid-small-container'>
                {selected === 'Dashboard' ? (
                   <>
+                     {/* //?? Grid Column 1  */}
                      <div className='grid-col-1'>
                         <SearchBar />
                         <div
@@ -234,7 +236,10 @@ function DashboardMainContent() {
                         </div>
                         <ActivityFeed />
                      </div>
-                     <div className='grid-col-2 '>2</div>
+                     {/* //?? Grid Column 2 */}
+                     <div className='grid-col-2 '>
+                        <Header />
+                     </div>
                   </>
                ) : (
                   <>

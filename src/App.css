@@ -151,7 +151,7 @@ body {
 }
 
 .grid-col-1 {
-   padding: 10px 20px 10px 20px;
+   padding: 10px 10px 10px 10px;
    background-color: #fffffd;
    width: 100%;
 }
@@ -186,7 +186,7 @@ body {
    border-radius: 10px;
    margin-bottom: 1.5rem;
    gap: 1rem;
-   margin-top: 1rem;
+   margin-top: 0.5rem;
 }
 
 .search-bar {
@@ -195,13 +195,13 @@ body {
    align-items: center;
    justify-content: start;
    width: 100%;
-   padding: 10px;
+   padding: 10px 20px;
    background-color: #ffffff;
 
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
    border-radius: 10px;
    margin-bottom: 1.5rem;
-   margin-top: 1rem;
+   margin-top: 0.5rem;
    gap: 1rem;
 }
 .search-bar input {
@@ -342,4 +342,42 @@ body {
    color: #bfc7d1;
    margin-top: 8px;
    letter-spacing: 0.5px;
+}
+
+.grid-col-2-header {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: end;
+   width: 100%;
+   gap: 0.8rem;
+   /* background-color: blue; */
+   margin-top: 2rem;
+   margin-bottom: 1rem;
+   padding-right: 2rem;
+}
+.avatar {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: end;
+   border-radius: 30%;
+   background-color: #01dfec;
+   cursor: pointer;
+
+   padding: 6px;
+}
+
+.addButton {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   width: 40px;
+   height: 40px;
+   border-radius: 30%;
+   background-color: #3b36a5;
+
+   cursor: pointer;
+   padding: 8px;
 }
