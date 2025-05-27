@@ -62,7 +62,7 @@ function CalendarView() {
                   <span className='day-date'>{date}</span>
                   {times.every((time) => time === '-') ? (
                      <span
-                        style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                        // style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                         className='big-dash'
                      >
                         —
@@ -71,7 +71,7 @@ function CalendarView() {
                      times.map((time, idx) =>
                         time === '-' ? (
                            <span
-                              style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                              //   style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
                               className='big-dash'
                               key={idx}
                            >
@@ -84,7 +84,10 @@ function CalendarView() {
                                  (date === 30 && time === '12:00') ||
                                  (date === 31 && time === '09:00')
                                     ? 'highlighted-time'
+                                    : date === 26 && time === '09:00'
+                                    ? 'highlighted-current-time'
                                     : 'day-time'
+                              }
                               }`}
                               key={idx}
                            >

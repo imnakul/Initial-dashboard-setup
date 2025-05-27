@@ -480,9 +480,18 @@ body {
 
 .highlighted-time {
    font-weight: 300;
-   color: #ffffff;
+   color: #ffffffce;
    font-size: 0.7rem;
    padding: 5px 10px;
    border-radius: 10px;
    background-color: #aaaed7;
+}
+
+.highlighted-current-time {
+   background-color: #3933a8;
+   font-weight: 300;
+   color: #ffffffce;
+   font-size: 0.7rem;
+   padding: 5px 10px;
+   border-radius: 10px;
 }
