@@ -39,7 +39,7 @@ function DashboardMainContent() {
                               style={{
                                  fontSize: '0.7rem',
                                  fontWeight: 400,
-                                 color: ' #a0aec0',
+                                 color: ' #3b36a5',
                                  display: 'flex',
                                  alignItems: 'center',
                                  gap: '0.5rem',
@@ -48,8 +48,8 @@ function DashboardMainContent() {
                               This week
                               <svg
                                  xmlns='http://www.w3.org/2000/svg'
-                                 width='10'
-                                 height='10'
+                                 width='8'
+                                 height='8'
                                  viewBox='0 0 20 20'
                               >
                                  <path
@@ -66,12 +66,9 @@ function DashboardMainContent() {
                            >
                               <div
                                  style={{
-                                    display: 'flex',
-                                    flexDirection: 'row',
-                                    alignItems: 'start',
-                                    justifyContent: 'end',
-                                    width: '100%',
-                                    padding: '0.5rem',
+                                    position: 'absolute',
+                                    top: '0.5rem',
+                                    right: '0.5rem',
                                  }}
                               >
                                  <svg
@@ -86,11 +83,13 @@ function DashboardMainContent() {
                                     />
                                  </svg>
                               </div>
+
                               <img
                                  src='/ANATOMY.jpg'
                                  alt='Anatomy'
-                                 style={{ width: '20rem', height: '20rem', objectFit: 'contain' }}
+                                 style={{ height: '22.5rem', objectFit: 'contain' }}
                               />
+
                               {/* <div class='scan-arc'>
                                  <svg
                                     xmlns='http://www.w3.org/2000/svg'
@@ -105,9 +104,132 @@ function DashboardMainContent() {
                                  </svg>
                               </div> */}
                            </div>
-
                            <div className='body-detail-2'>
-                              2<span className='activity-details'>Details &rarr;</span>
+                              <div className='body-detail-2-card'>
+                                 <div
+                                    style={{
+                                       display: 'flex',
+                                       flexDirection: 'row',
+                                       alignItems: 'center',
+                                       gap: '0.75rem',
+                                    }}
+                                 >
+                                    <img
+                                       src='/lungs.png'
+                                       alt='Lungs'
+                                       style={{ width: '2rem', height: '2rem', objectFit: 'contain' }}
+                                    />
+                                    <span style={{ fontWeight: '500' }}> Lungs</span>
+                                 </div>
+                                 <span
+                                    style={{
+                                       display: 'inline-flex',
+                                       fontSize: '0.7rem',
+                                       color: ' #a3a2a2',
+                                       marginTop: '1rem',
+                                    }}
+                                 >
+                                    {' '}
+                                    Date: 26 Okt 2021
+                                 </span>
+                                 <div
+                                    style={{
+                                       height: '0.5rem',
+                                       background: 'linear-gradient(90deg, #b34b4b 75%, #dbdee8 75%, #dbdee8 100%)',
+                                       borderRadius: '0.25rem',
+                                       width: '100%',
+                                       marginTop: '1rem',
+                                    }}
+                                 />
+                              </div>
+                              <div className='body-detail-2-card'>
+                                 <div
+                                    style={{
+                                       display: 'flex',
+                                       flexDirection: 'row',
+                                       alignItems: 'center',
+                                       gap: '0.75rem',
+                                    }}
+                                 >
+                                    <img
+                                       src='/tooth.png'
+                                       alt='Tooth'
+                                       style={{ width: '2rem', height: '2rem', objectFit: 'contain' }}
+                                    />
+                                    <span style={{ fontWeight: '500' }}> Teeth</span>
+                                 </div>
+                                 <span
+                                    style={{
+                                       display: 'inline-flex',
+                                       fontSize: '0.7rem',
+                                       color: ' #a3a2a2',
+                                       marginTop: '1rem',
+                                    }}
+                                 >
+                                    {' '}
+                                    Date: 26 Okt 2021
+                                 </span>
+                                 <div
+                                    style={{
+                                       height: '0.5rem',
+                                       background: 'linear-gradient(90deg, #7bd3c2 75%, #dbdee8 75%, #dbdee8 100%)',
+                                       borderRadius: '0.25rem',
+                                       width: '100%',
+                                       marginTop: '1rem',
+                                    }}
+                                 />
+                              </div>
+                              <div className='body-detail-2-card'>
+                                 <div
+                                    style={{
+                                       display: 'flex',
+                                       flexDirection: 'row',
+                                       alignItems: 'center',
+                                       gap: '0.75rem',
+                                    }}
+                                 >
+                                    <img
+                                       src='/bone.png'
+                                       alt='Bone'
+                                       style={{ width: '2rem', height: '2rem', objectFit: 'contain' }}
+                                    />
+                                    <span style={{ fontWeight: '500' }}> Bone</span>
+                                 </div>
+                                 <span
+                                    style={{
+                                       display: 'inline-flex',
+                                       fontSize: '0.7rem',
+                                       color: ' #a3a2a2',
+                                       marginTop: '1rem',
+                                    }}
+                                 >
+                                    {' '}
+                                    Date: 26 Okt 2021
+                                 </span>
+                                 <div
+                                    style={{
+                                       height: '0.5rem',
+                                       background: 'linear-gradient(90deg, #fb775a 75%, #dbdee8 75%, #dbdee8 100%)',
+                                       borderRadius: '0.25rem',
+                                       width: '100%',
+                                       marginTop: '1rem',
+                                    }}
+                                 />
+                              </div>
+                              <span className='activity-details'>
+                                 Details
+                                 <svg
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    width='8'
+                                    height='8'
+                                    viewBox='0 0 32 32'
+                                 >
+                                    <path
+                                       fill='currentColor'
+                                       d='m18.72 6.78l-1.44 1.44L24.063 15H4v2h20.063l-6.782 6.78l1.44 1.44l8.5-8.5l.686-.72l-.687-.72l-8.5-8.5z'
+                                    />
+                                 </svg>
+                              </span>
                            </div>
                         </div>
                         <ActivityFeed />

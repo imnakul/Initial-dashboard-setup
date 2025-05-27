@@ -8,9 +8,7 @@ function Sidebar({ selected, onItemClick }) {
                <span style={{ color: '#231C56' }}>care.</span>
             </div>
             <div className='sidebar-content'>
-               <span style={{ color: '#ccc', fontSize: '0.9rem', fontWeight: 'bold', marginLeft: '1rem' }}>
-                  General
-               </span>
+               <span style={{ color: '#e5e8ee', fontSize: '0.9rem', marginLeft: '1rem' }}>General</span>
                {general.map((item) => {
                   return (
                      <span
@@ -28,7 +26,7 @@ function Sidebar({ selected, onItemClick }) {
                   )
                })}
 
-               <span style={{ color: '#ccc', fontSize: '0.9rem', fontWeight: 'bold', marginLeft: '1rem' }}>Tools</span>
+               <span style={{ color: '#e5e8ee', fontSize: '0.9rem', marginLeft: '1rem' }}>Tools</span>
                {tools.map((item) => {
                   return (
                      <span

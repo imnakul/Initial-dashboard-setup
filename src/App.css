@@ -21,7 +21,7 @@ body {
    overflow-y: auto;
    overflow-x: hidden;
 
-   justify-content: space-between;
+   justify-content: space-start;
    border-top-left-radius: 30px;
    border-bottom-left-radius: 30px;
    grid-column: 1;
@@ -186,6 +186,7 @@ body {
    border-radius: 10px;
    margin-bottom: 1.5rem;
    gap: 1rem;
+   margin-top: 1rem;
 }
 
 .search-bar {
@@ -224,7 +225,7 @@ body {
    padding: 10px;
    background-color: #ffffff;
    margin-bottom: 1.5rem;
-   gap: 2rem;
+   gap: 4rem;
 }
 
 .body-detail-1 {
@@ -232,11 +233,12 @@ body {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   width: 60%;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
    border-radius: 10px;
    margin-left: 2rem;
-   padding-bottom: 50px;
+   padding-top: 20px;
+   padding-bottom: 40px;
    background-color: #f6faff;
    position: relative;
 }
@@ -244,12 +246,24 @@ body {
 .body-detail-2 {
    display: flex;
    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 70%;
+
+   /* background-color: #3b36a5; */
+   gap: 1rem;
+}
+
+.body-detail-2-card {
+   display: flex;
+   flex-direction: column;
    align-items: start;
    justify-content: start;
-   width: 40%;
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   width: 100%;
+   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
    border-radius: 10px;
    background-color: #f6faff;
+   padding: 1rem;
 }
 
 /* .scan-arc {
@@ -287,6 +301,17 @@ body {
    font-weight: 400;
    color: #a0aec0;
    margin-left: auto;
+}
+
+.activity-details {
+   font-size: 0.7rem;
+   font-weight: 400;
+   color: #3b36a5;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   justify-content: end;
+   gap: 0.5rem;
 }
 
 .activity-chart-custom {
