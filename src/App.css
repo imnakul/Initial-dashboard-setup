@@ -9,15 +9,18 @@ html,
 body {
    height: 100%;
    width: 100%;
+   max-width: 100vw;
+   overflow-x: hidden;
+   max-height: 100vh;
    background-color: #fffffd;
 }
 
 .sidebar {
-   padding: 20px;
+   padding: 20px 20px 20px 20px;
    display: flex;
    flex-direction: column;
    align-items: start;
-   height: 100%;
+   height: auto;
    overflow-y: auto;
    overflow-x: hidden;
 
@@ -26,49 +29,52 @@ body {
    border-bottom-left-radius: 30px;
    grid-column: 1;
    background-color: #f4faff;
+   position: relative;
 }
 
 .sidebar-header {
    display: flex;
    flex-direction: row;
    align-items: center;
-   justify-content: start;
+   justify-content: center;
    width: 100%;
    font-weight: 700;
-   font-size: 1.5rem;
-   margin: 2rem 0 2rem 1rem;
+   font-size: 1.2rem;
+   margin: 1rem 0 2rem 0;
 }
 
 .sidebar-item {
    display: flex;
    flex-direction: row;
-   justify-content: start;
+   justify-content: first baseline;
    align-items: center;
-   margin: 0 0 0 1rem;
-   gap: 1rem;
-   font-weight: 500;
-   font-size: 0.9rem;
+   margin: 0 0 0 0.8rem;
+   gap: 0.8rem;
+   font-weight: 400;
+   font-size: 0.8rem;
    cursor: pointer;
 }
 
 .sidebar-content {
    display: flex;
    flex-direction: column;
-   gap: 2rem;
+   gap: 1.5rem;
    position: relative;
 }
 
 .sidebar-footer {
    display: flex;
    flex-direction: row;
-   justify-content: start;
+
    align-items: center;
    width: 100%;
    gap: 0.5rem;
 
-   font-weight: 300;
-   font-size: 0.9rem;
-   margin: 7.5rem 0 0 1rem;
+   font-weight: 400;
+   font-size: 0.8rem;
+   margin: 3rem 0 0 0.8rem;
+   position: absolute;
+   bottom: 2rem;
 }
 
 /* .header {
@@ -122,12 +128,14 @@ body {
 @media (min-width: 1200px) {
    .main-container {
       display: grid;
-      grid-template-columns: 200px 1fr;
-      gap: 20px;
+      grid-template-columns: 170px 1fr;
+      gap: 10px;
       margin: 12px 8px 12px 8px;
       border: 2px solid #ccc;
       padding: 10px;
       border-radius: 30px;
+      max-width: 100vw;
+      overflow-x: hidden;
       /* background-color: #f6faff; */
    }
 
@@ -153,14 +161,12 @@ body {
 .grid-col-1 {
    padding: 10px 10px 10px 10px;
    background-color: #fffffd;
-   width: 100%;
 }
 
 .grid-col-2 {
-   padding: 10px 30px;
+   padding: 10px 20px;
    background-color: #f6faff;
    /* background-color: blue; */
-   width: 100%;
    border-top-right-radius: 30px;
    border-bottom-right-radius: 30px;
 }
@@ -172,7 +178,6 @@ body {
    justify-content: space-between;
    width: 100%;
    gap: 1rem;
-   margin-top: 1.5rem;
 }
 
 .notification-icon {
@@ -187,7 +192,7 @@ body {
    border-radius: 10px;
    margin-bottom: 1.5rem;
    gap: 1rem;
-   margin-top: 0.5rem;
+   margin-top: 1rem;
 }
 
 .search-bar {
@@ -202,9 +207,10 @@ body {
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
    border-radius: 10px;
    margin-bottom: 1.5rem;
-   margin-top: 0.5rem;
+   margin-top: 1rem;
    gap: 1rem;
 }
+
 .search-bar input {
    width: 100%;
    border: none;
@@ -249,7 +255,7 @@ body {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   width: 70%;
+   width: 60%;
 
    /* background-color: #3b36a5; */
    gap: 1rem;
@@ -262,7 +268,7 @@ body {
    justify-content: start;
    width: 100%;
    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-   border-radius: 10px;
+   border-radius: 30px;
    background-color: #f6faff;
    padding: 1rem;
 }
@@ -353,7 +359,7 @@ body {
    width: 100%;
    gap: 0.8rem;
    /* background-color: blue; */
-   margin-top: 2rem;
+   margin-top: 1rem;
    margin-bottom: 1.5rem;
    padding-right: 1rem;
 }
