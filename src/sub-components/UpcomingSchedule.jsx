@@ -1,7 +1,7 @@
 function UpcomingSchedule() {
    return (
       <>
-         <span style={{ color: ' #231C56', fontSize: '1rem', fontWeight: '600' }}>The Upcoming Schedule</span>
+         <span style={{ color: ' #231C56', fontSize: '1.2rem', fontWeight: '600' }}>The Upcoming Schedule</span>
          <div className='upcoming-schedule'>
             <span>On Thursday</span>
             <div className='upcoming-schedule__day'>

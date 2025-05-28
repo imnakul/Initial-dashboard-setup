@@ -11,7 +11,7 @@ body {
    width: 100%;
    max-width: 100vw;
    overflow-x: hidden;
-   max-height: 100vh;
+
    background-color: #fffffd;
 }
 
@@ -161,6 +161,7 @@ body {
 .grid-col-1 {
    padding: 10px 10px 10px 10px;
    background-color: #fffffd;
+   max-height: 80%;
 }
 
 .grid-col-2 {
@@ -169,6 +170,7 @@ body {
    /* background-color: blue; */
    border-top-right-radius: 30px;
    border-bottom-right-radius: 30px;
+   max-height: 80%;
 }
 
 .header-dashboard {
@@ -231,7 +233,7 @@ body {
    width: 100%;
    padding: 10px;
    background-color: #ffffff;
-   margin-bottom: 1.5rem;
+   /* margin-bottom: 1.5rem; */
    gap: 4rem;
 }
 
@@ -453,7 +455,7 @@ body {
 .day-name {
    font-weight: 500;
    color: #3b36a5;
-   font-size: 0.7rem;
+   font-size: 0.6rem;
 }
 
 .day-date {
@@ -465,7 +467,7 @@ body {
 .day-time {
    font-weight: 300;
    color: #0b073e;
-   font-size: 0.7rem;
+   font-size: 0.6rem;
 }
 .day.selected {
    background-color: #3b36a5;
@@ -487,7 +489,7 @@ body {
 .highlighted-time {
    font-weight: 300;
    color: #ffffffce;
-   font-size: 0.7rem;
+   font-size: 0.5rem;
    padding: 5px 10px;
    border-radius: 10px;
    background-color: #aaaed7;
@@ -497,7 +499,7 @@ body {
    background-color: #3933a8;
    font-weight: 300;
    color: #ffffffce;
-   font-size: 0.7rem;
+   font-size: 0.5rem;
    padding: 5px 10px;
    border-radius: 10px;
 }
@@ -540,7 +542,8 @@ body {
    padding: 20px 20px;
    background-color: #dde2f9;
    border-radius: 20px;
-   font-size: 0.9rem;
+   font-size: 0.8rem;
+   font-weight: 400;
    gap: 0.5rem;
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
    position: relative;
